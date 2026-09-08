@@ -45,4 +45,8 @@
 
         }
     }
+    class User 
+    {
+        string name = "Anas";
+    }
 }
