@@ -22,30 +22,86 @@
 
 
             //Parse () && TryParse 
-          //  string strNum = "589";
-          //  //int InNum = int.Parse(strNum);
-          //  //Console.WriteLine(InNum + 100);
+            //string strNum = "589ABC";
+            //int InNum = int.Parse(strNum);
+            //Console.WriteLine(InNum + 100);
 
-          //  int result = 0;
+            //  int result = 0;
 
-          //bool IsConverted =   int.TryParse(strNum, out result);
+            //bool IsConverted =   int.TryParse(strNum, out result);
 
 
-          //  if (IsConverted)
-          //  {
-          //      Console.WriteLine("Result is {0}", result);
-          //  }
-          //  else
-          //  {
-          //      Console.WriteLine("Pleas Enter a valid Number");
-          //  }
+            //  if (IsConverted)
+            //  {
+            //      Console.WriteLine("Result is {0}", result);
+            //  }
+            //  else
+            //  {
+            //      Console.WriteLine("Pleas Enter a valid Number");
+            //  }
 
+
+
+            //Comp Error 
+
+            //int num = 10;
+            //Console.WriteLine(Num);
+
+            ////Strong type 
+            //string name = "Anas";
+            //Console.WriteLine(name);
+            //name = 10;
+
+            //string name = "AAA";
+
+
+            //int number = 1;
+            //while (number < 10)
+            //{
+            //    Console.WriteLine(number);
+            //    number += 3;
+            //    if (number == 7)
+            //    {
+            //        Console.WriteLine("The number is 7");
+            //    }
+            //}
+
+
+            try
+            {
+                string strNum = "589ABC";
+                int InNum = int.Parse(strNum);
+                Console.WriteLine(InNum + 100);
+            }
+            catch (NullReferenceException ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+            catch (DivideByZeroException ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+            catch(Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+            catch
+            {
+                Console.WriteLine("Fel värde ");
+            }
+
+            
 
             Console.ReadKey();
 
         }
     }
     class User 
+    {
+        string name = "Anas";
+    }
+
+    class User2
     {
         string name = "Anas";
     }
