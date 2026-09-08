@@ -81,7 +81,7 @@
             {
                 Console.WriteLine(ex.Message);
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 Console.WriteLine(ex.Message);
             }
@@ -90,7 +90,26 @@
                 Console.WriteLine("Fel värde ");
             }
 
-            
+
+
+            //var name = "Anas";
+            //var cha = 'A';
+            //var doub = 30.67;
+
+            //name = 'A';
+
+            //dynamic data = "Hej";
+            //data = 10;
+
+            //Console.WriteLine(data.Length);
+
+
+            Random ran = new Random();
+
+           int Number= ran.Next(1,11);
+
+            Console.WriteLine("Number is : {0}" , Number);
+            Console.WriteLine($"Number is {Number}");
 
             Console.ReadKey();
 
